@@ -1,5 +1,36 @@
 <template>
-  <div>Temporary</div>
+  <div class="flex h-screen w-screen flex-col overflow-hidden">
+    <div class="grid h-16 grid-cols-[110px_auto_110px] gap-5 bg-[#4664AA] px-5">
+      <img src="./assets/KIT-Logo.png" class="my-auto h-12" />
+      <div class="flex items-center justify-center">
+        <SearchBar
+          v-if="router.currentRoute.value.name !== 'Home'"
+          v-model="searchText"
+          class="w-96"
+          @submit="doSearch"
+        />
+      </div>
+      <div><!-- Placeholder --></div>
+    </div>
+    <div class="flex-1">
+      <RouterView />
+    </div>
+  </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue'
+import SearchBar from './components/SearchBar.vue'
+import { router } from './router'
+import { store } from './stores'
+
+const searchText = ref('')
+router.afterEach(() => {
+  searchText.value = store().search
+})
+
+function doSearch(value: string) {
+  searchText.value = store().search
+  router.push({ name: 'Search', query: { search: value } })
+}
+</script>

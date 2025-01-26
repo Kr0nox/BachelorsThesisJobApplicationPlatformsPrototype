@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 export const store = defineStore({
   id: 'main',
   state: () => ({
-    // state
+    search: ''
   }),
   actions: {
     // actions
