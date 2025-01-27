@@ -13,8 +13,7 @@ export const router = createRouter({
     {
       path: '/search',
       name: 'Search',
-      component: SearchView,
-      props: (route) => ({ search: route.query.search })
+      component: SearchView
     }
   ]
 })
