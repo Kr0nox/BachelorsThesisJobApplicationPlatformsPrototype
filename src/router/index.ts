@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import SearchView from '@/views/SearchView.vue'
+import InsertView from '@/views/InsertView.vue'
+import ApplyView from '@/views/ApplyView.vue'
 
 export const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,6 +16,18 @@ export const router = createRouter({
       path: '/search',
       name: 'Search',
       component: SearchView
+    },
+    {
+      path: '/insert/:id',
+      name: 'Insert',
+      component: InsertView,
+      props: true
+    },
+    {
+      path: '/apply/:id',
+      name: 'Apply',
+      component: ApplyView,
+      props: true
     }
   ]
 })
