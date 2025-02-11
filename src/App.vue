@@ -15,7 +15,7 @@
         <FontAwesomeIcon :icon="faUserCircle" class="h-10 text-white" />
       </div>
     </div>
-    <div class="flex-1">
+    <div class="flex-1 overflow-scroll">
       <RouterView />
     </div>
   </div>

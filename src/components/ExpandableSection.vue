@@ -1,9 +1,9 @@
 <template>
   <div class="py-1">
-    <h2 class="border-b border-gray-300 px-1">
+    <h2 class="border-b border-gray-300 px-1" @click="expanded = !expanded">
       <FontAwesomeIcon :icon="expanded ? faChevronDown : faChevronRight" /> {{ title }}
     </h2>
-    <div v-if="expanded"><slot></slot></div>
+    <div v-if="expanded" class="px-1 pl-3"><slot></slot></div>
   </div>
 </template>
 
@@ -19,5 +19,5 @@ defineProps({
   }
 })
 
-const expanded = ref(false)
+const expanded = ref(true)
 </script>
