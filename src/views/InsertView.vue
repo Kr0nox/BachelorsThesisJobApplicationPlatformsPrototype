@@ -105,6 +105,33 @@
           {{ insert.socialGuess.customers }}
         </div>
       </div>
+      <hr class="my-5" />
+      <div class="grid grid-cols-[auto_1fr] gap-x-2 px-5">
+        <span>Response Time:</span><span>Latest 01.04.2025</span>
+        <span>First round of Interviews:</span><span>14.04.2025 - 21.04.2025</span>
+        <span>Second round of Interviews:</span><span>28.04.2025 - 30.04.2025</span>
+      </div>
+      <div class="px-5 pt-5">
+        <h2 class="font-bold">What to Expect in Your First Weeks:</h2>
+        <p>
+          <b>Onboarding & Setup:</b> Gain access to internal tools, set up your development environment, and complete essential training.
+        </p>
+        <p>
+          <b>Team Introductions:</b> Meet your colleagues, understand team structures, and get familiar with communication channels.
+        </p>
+        <p>
+          <b>Codebase Exploration:</b> Review documentation, explore the repository, and work on small starter tasks to familiarize yourself with the tech stack.
+        </p>
+        <p>
+          <b>Pair Programming & Mentorship:</b> Collaborate with team members, participate in code reviews, and receive guidance from a mentor or senior developer.
+        </p>
+        <p>
+          <b>First Contributions:</b> Begin working on minor bug fixes or features, applying team best practices and coding standards.
+        </p>
+        <p>
+          <b>Agile Routines: </b>Join stand-ups, sprint planning, and retrospectives to understand workflows and project management processes.
+        </p>
+      </div>
     </div>
   </div>
 </template>

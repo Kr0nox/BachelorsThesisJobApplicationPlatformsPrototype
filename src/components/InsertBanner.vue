@@ -19,11 +19,11 @@
       </div>
       <div>
         <FontAwesomeIcon :icon="faStar" />
-        {{ insert.ratings.Overall }}
+        Overall {{ insert.ratings.Overall }}
       </div>
       <div>
         <FontAwesomeIcon :icon="faPeopleGroup" />
-        {{ (insert.socialGuess.customers + insert.socialGuess.team) / 2 }}
+        Social {{ (insert.socialGuess.customers + insert.socialGuess.team) / 2 }}
       </div>
     </div>
     <div

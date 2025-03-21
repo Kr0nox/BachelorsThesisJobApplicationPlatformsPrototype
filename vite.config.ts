@@ -15,7 +15,7 @@ export default defineConfig((userConfig: UserConfig) => {
   return {
     plugins: [
       vue(),
-      vueDevTools(),
+      //vueDevTools(),
     ],
     resolve: {
       alias: {

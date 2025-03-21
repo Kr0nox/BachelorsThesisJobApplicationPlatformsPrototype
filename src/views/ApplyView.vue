@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-full justify-center">
+  <div class="pt-5 flex w-full justify-center">
     <div class="flex w-2/3 flex-col items-center">
       <div class="flex w-fit flex-col gap-y-2 px-5">
         <h1>CV</h1>
@@ -20,6 +20,9 @@
         <p class="flex gap-x-5">
           <button class="rounded bg-primary px-5 py-2 text-white">
             <FontAwesomeIcon :icon="faUpload" /> Upload Document
+          </button>
+          <button class="rounded bg-primary px-5 py-2 text-white">
+            <FontAwesomeIcon :icon="faPen" class="pr-2" />Write letter
           </button>
           <button class="rounded bg-primary px-5 py-2 text-white">
             <FontAwesomeIcon :icon="faFileCircleQuestion" class="pr-2" />Questionnaire
@@ -97,6 +100,7 @@ import {
   faFileCircleQuestion,
   faFilePen,
   faMinus,
+  faPen,
   faPenToSquare,
   faPlus,
   faShare,

@@ -9,7 +9,7 @@
           >
           <span class="flex gap-x-2"
             ><div class="min-w-[114px]">Max Travel Time</div>
-            <input class="w-28" type="number" />m</span
+            <input class="w-28" type="number" />min</span
           >
           <button class="rounded border border-slate-200 bg-white px-2 py-1">
             <FontAwesomeIcon :icon="faMapMarkerAlt" /> Select Start
@@ -43,7 +43,17 @@
       </ExpandableSection>
       <ExpandableSection title="Social aspects">
         <div class="flex flex-col gap-y-1">
-          <span><input type="checkbox" /> Has Team</span>
+          <span class="gap-x-2 flex"><div class="min-w-[159px]">Min Team Contact</div> <input class="w-28" type="number" /></span>
+          <span class="gap-x-2 flex"><div class="min-w-[159px]">Max Team Contact</div> <input class="w-28" type="number" /></span>
+          <span class="gap-x-2 flex"><div class="min-w-[159px]">Min Customer Contact</div> <input class="w-28" type="number" /></span>
+          <span class="gap-x-2 flex"><div class="min-w-[159px]">Max Customer Contact</div> <input class="w-28" type="number" /></span>
+        </div>
+      </ExpandableSection>
+
+      <ExpandableSection title="Ratings">
+        <div class="flex flex-col gap-y-1">
+          <span class="gap-x-2 flex"><div class="min-w-[145px]">Min Overall Rating</div> <input class="w-28" type="number" /></span>
+          <span class="gap-x-2 flex"><div class="min-w-[145px]">Max Diversity Rating</div> <input class="w-28" type="number" /></span>
         </div>
       </ExpandableSection>
     </div>
