@@ -80,7 +80,7 @@
         ></p>
       </div>
       <hr class="my-5" />
-      <div class="grid w-fit grid-cols-[auto_auto_auto] grid-rows-2 gap-x-2 gap-y-4 px-5">
+      <div class="grid w-fit grid-cols-[auto_auto_auto_auto] grid-rows-2 gap-x-2 gap-y-4 px-5">
         <h2 class="">Ratings</h2>
         <div>
           <FontAwesomeIcon class="text-gray-500" :icon="faStar" />
@@ -92,6 +92,7 @@
           <span class="text-gray-500">Diversity</span>
           {{ insert.ratings.Diversity }}
         </div>
+        <div></div>
 
         <h2>Social Contact</h2>
         <div>
@@ -104,6 +105,7 @@
           <span class="text-gray-500">Customers</span>
           {{ insert.socialGuess.customers }}
         </div>
+        <FontAwesomeIcon :icon="faInfoCircle" class="text-gray-500" />
       </div>
       <hr class="my-5" />
       <div class="grid grid-cols-[auto_1fr] gap-x-2 px-5">
@@ -114,22 +116,28 @@
       <div class="px-5 pt-5">
         <h2 class="font-bold">What to Expect in Your First Weeks:</h2>
         <p>
-          <b>Onboarding & Setup:</b> Gain access to internal tools, set up your development environment, and complete essential training.
+          <b>Onboarding & Setup:</b> Gain access to internal tools, set up your development
+          environment, and complete essential training.
         </p>
         <p>
-          <b>Team Introductions:</b> Meet your colleagues, understand team structures, and get familiar with communication channels.
+          <b>Team Introductions:</b> Meet your colleagues, understand team structures, and get
+          familiar with communication channels.
         </p>
         <p>
-          <b>Codebase Exploration:</b> Review documentation, explore the repository, and work on small starter tasks to familiarize yourself with the tech stack.
+          <b>Codebase Exploration:</b> Review documentation, explore the repository, and work on
+          small starter tasks to familiarize yourself with the tech stack.
         </p>
         <p>
-          <b>Pair Programming & Mentorship:</b> Collaborate with team members, participate in code reviews, and receive guidance from a mentor or senior developer.
+          <b>Pair Programming & Mentorship:</b> Collaborate with team members, participate in code
+          reviews, and receive guidance from a mentor or senior developer.
         </p>
         <p>
-          <b>First Contributions:</b> Begin working on minor bug fixes or features, applying team best practices and coding standards.
+          <b>First Contributions:</b> Begin working on minor bug fixes or features, applying team
+          best practices and coding standards.
         </p>
         <p>
-          <b>Agile Routines: </b>Join stand-ups, sprint planning, and retrospectives to understand workflows and project management processes.
+          <b>Agile Routines: </b>Join stand-ups, sprint planning, and retrospectives to understand
+          workflows and project management processes.
         </p>
       </div>
     </div>
@@ -149,7 +157,8 @@ import {
   faBookmark,
   faShare,
   faPeopleGroup,
-  faStar
+  faStar,
+  faInfoCircle
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { DescriptionPart } from '@/model/Insert'
