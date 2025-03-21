@@ -57,7 +57,7 @@
 
       <h2 class="mb-2">Related inserts:</h2>
       <div class="space-y-5">
-        <InsertBanner v-for="insert of store().inserts" :key="insert.id" :insert="insert" />
+        <InsertBanner v-for="insert of store().relatedInserts" :key="insert.id" :insert="insert" />
       </div>
     </div>
   </div>
