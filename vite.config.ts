@@ -9,7 +9,7 @@ export default defineConfig((userConfig: UserConfig) => {
   let base = '/'
   switch (userConfig.mode) {
     case 'deploy':
-      base = '/ba-prototype/'
+      base = '/BachelorsThesisJobApplicationPlatformsPrototype/'
       break
   }
   return {
